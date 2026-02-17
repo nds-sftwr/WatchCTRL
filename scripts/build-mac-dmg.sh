@@ -36,9 +36,9 @@ xcodebuild archive \
     -scheme "$SCHEME" \
     -archivePath "$ARCHIVE_PATH" \
     -configuration Release \
-    CODE_SIGN_IDENTITY="Developer ID Application" \
+    -allowProvisioningUpdates \
     DEVELOPMENT_TEAM="P7MHD6K252" \
-    CODE_SIGN_STYLE=Manual \
+    CODE_SIGN_STYLE=Automatic \
     | tail -5
 
 echo "  ✓ Archive created"
