@@ -1,0 +1,11 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# DMG build artifacts (the final DMG in docs/ is tracked intentionally)
+*.xcarchive

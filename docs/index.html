@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchCTRL Mac — Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            padding: 80px 24px 60px;
+            text-align: center;
+        }
+        .icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 28px;
+            margin-bottom: 32px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #86868b;
+            margin-bottom: 48px;
+            line-height: 1.4;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #2997ff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background 0.2s;
+            margin-bottom: 12px;
+        }
+        .download-btn:hover { background: #0077ed; }
+        .version {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 60px;
+        }
+        .requirements {
+            text-align: left;
+            background: #1c1c1e;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 40px;
+        }
+        .requirements h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+        .requirements li {
+            padding: 8px 0;
+            color: #a1a1a6;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .requirements li::before {
+            content: '•';
+            color: #2997ff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .setup {
+            text-align: left;
+            background: #1c1c1e;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 40px;
+        }
+        .setup h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .setup ol {
+            padding-left: 20px;
+            color: #a1a1a6;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .setup code {
+            background: #2c2c2e;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #f5f5f7;
+        }
+        .footer {
+            color: #6e6e73;
+            font-size: 13px;
+            padding: 20px;
+        }
+        .footer a { color: #2997ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">&#x2328;&#xFE0F;</div>
+        <h1>WatchCTRL Mac</h1>
+        <p class="subtitle">Control your Mac from your Apple Watch.<br>Anki flashcards, scrolling, media &mdash; all from your wrist.</p>
+
+        <a href="WatchCTRL-Mac.dmg" class="download-btn">Download for Mac</a>
+        <p class="version">Requires macOS 14.0 or later &bull; Apple Silicon &amp; Intel</p>
+
+        <div class="requirements">
+            <h2>How it works</h2>
+            <ul>
+                <li>Install the WatchCTRL iOS app on your iPhone (available on the App Store)</li>
+                <li>The iPhone relays commands from your Apple Watch to this Mac app</li>
+                <li>Use your watch to control Anki reviews, scroll pages, play/pause media, and more</li>
+                <li>iPhone and Mac must be on the same Wi-Fi network</li>
+            </ul>
+        </div>
+
+        <div class="setup">
+            <h2>Setup</h2>
+            <ol>
+                <li>Open the DMG and drag <strong>WatchCTRL Mac</strong> to Applications</li>
+                <li>Launch the app &mdash; it lives in your menu bar (no dock icon)</li>
+                <li>Grant <strong>Accessibility</strong> permission when prompted<br>
+                    <small style="color:#6e6e73">(System Settings &rarr; Privacy &amp; Security &rarr; Accessibility)</small></li>
+                <li>Open the WatchCTRL app on your iPhone &mdash; it will auto-connect</li>
+                <li>Use your Apple Watch buttons to control your Mac</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made by <a href="https://github.com/nds-sftwr">nds-sftwr</a> &bull; <a href="https://github.com/nds-sftwr/WatchCTRL">Source</a></p>
+    </div>
+</body>
+</html>
